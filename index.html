@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Alex Morgan — designer and full-stack developer building thoughtful digital products." />
+  <title>Alex Morgan — Product Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Go to top"><span>AM</span> Alex Morgan</a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="status-pill" href="#contact"><span></span> Available for work</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="eyebrow reveal">FULL-STACK DEVELOPER · INDIA</div>
+      <h1 class="reveal">I build digital products<br>that feel <em>simple.</em></h1>
+      <div class="hero-bottom reveal">
+        <p>I turn complex ideas into useful, polished experiences—from first sketch to production-ready code.</p>
+        <a class="round-link" href="#work" aria-label="See selected work">
+          <span>See my work</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work">
+      <div class="section-heading reveal">
+        <div><span class="section-number">01</span><h2>Selected work</h2></div>
+        <p>A mix of shipped products and ideas currently taking shape.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="active" data-filter="all">All work</button>
+        <button data-filter="live">Live</button>
+        <button data-filter="progress">In progress</button>
+      </div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="section-heading reveal">
+        <div><span class="section-number">02</span><h2>About & toolkit</h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="large-copy">I care about the details people <em>feel</em>, even when they don’t notice them.</p>
+          <p>I’m a developer focused on building dependable, accessible, and beautifully considered web products. I enjoy working across the stack and collaborating closely with founders and product teams.</p>
+          <a class="text-link" href="mailto:hello@example.com">More about me <span>↗</span></a>
+        </div>
+        <div class="stack-list reveal" id="stack-list"></div>
+      </div>
+    </section>
+
+    <section class="experience section-shell">
+      <div class="section-heading reveal">
+        <div><span class="section-number">03</span><h2>Experience</h2></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-row"><span>2024 — Now</span><strong>Independent Developer</strong><p>Freelance · Remote</p></div>
+        <div class="timeline-row"><span>2022 — 2024</span><strong>Full-Stack Developer</strong><p>Product Studio · Bengaluru</p></div>
+        <div class="timeline-row"><span>2020 — 2022</span><strong>Frontend Developer</strong><p>Digital Agency · Remote</p></div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-card reveal">
+        <span class="section-number">04 · LET’S TALK</span>
+        <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
+        <div class="contact-bottom">
+          <p>I’m open to freelance projects, product collaborations, and good conversations.</p>
+          <a href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section-shell">
+    <p>© <span id="year"></span> Alex Morgan</p>
+    <div><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#top">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
